@@ -75,6 +75,8 @@ const processLine = (line) => {
 };
 
 function generateQueries() {
+  result = '';
+
   // Get the input string value
   var inputString = document.getElementById('inputString').value;
 
