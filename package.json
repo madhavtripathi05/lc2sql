@@ -1,0 +1,16 @@
+{
+  "name": "lc2sql",
+  "version": "1.0.0",
+  "description": "convert leet code problems data to sql queries",
+  "main": "run.ts",
+  "scripts": {
+    "start": "./node_modules/.bin/ts-node run.ts"
+  },
+  "keywords": [],
+  "author": "madhavtripathi05",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "ts-node": "^10.9.1"
+  }
+}
