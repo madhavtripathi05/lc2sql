@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Query Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Query Generator</h1>
+      <div class="form-group">
+        <label>Input String:</label>
+        <textarea
+          rows="10"
+          cols="97"
+          type="text"
+          id="inputString"
+          placeholder="Enter input string"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button onclick="generateQueries()">Generate Queries</button>
+      </div>
+      <div class="output">
+        <h3>Generated Queries:</h3>
+        <pre id="generatedQueries"></pre>
+        <button onclick="copyToClipboard()">Copy to Clipboard</button>
+        <p id="message">&nbsp; Copied!</p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
