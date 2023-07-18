@@ -32,7 +32,7 @@ const processLine = (line) => {
     }
 
     // if the separator line is reached, set the flag
-    if (hyphensCount === columnCharacterCount) reachedHyphens = true;
+    if (hyphensCount >= columnCharacterCount) reachedHyphens = true;
   }
 
   // if new table comes, print the previous table
@@ -47,6 +47,7 @@ const processLine = (line) => {
         columnNames.map((c) => c.trim() + ' varchar(255)').join(', ') +
         ');';
 
+      result += createTableStatement + '\n';
       // Generate SQL insert statements
       const insertStatements = [];
       for (let i = 0; i < values.length; i++) {

@@ -33,7 +33,7 @@ const processLine = (line: string) => {
     }
 
     // if the separator line is reached, set the flag
-    if (hyphensCount === columnCharacterCount) reachedHyphens = true;
+    if (hyphensCount >= columnCharacterCount) reachedHyphens = true;
   }
 
   // if new table comes, print the previous table
